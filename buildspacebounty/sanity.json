@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "project": {
+    "name": "buildspaceBounty"
+  },
+  "api": {
+    "projectId": "4l26zb49",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
