@@ -6,7 +6,7 @@ export default function Hero() {
     <div>
         <img className="top-0 left-0 w-full h-screen object-cover" src={BG}/>
         <div className="bg-black/30 absolute top-0 left-0 w-full h-screen text-white flex flex-col justify-center items-center">
-            <div className="flex items-center max-[500px]:text-[16px] text-[20px] rounded-full bg-neutral-600/30 backdrop-blur-lg hover:backdrop-blur-none ease-in duration-300 py-[7px] px-[18px] sm:px-[24px] mb-[36px] ">
+            <div className="flex items-center max-[500px]:text-[16px] text-[20px] rounded-full bg-neutral-600/40 backdrop-blur-lg hover:backdrop-blur-none ease-in duration-300 py-[7px] px-[18px] sm:px-[24px] mb-[36px] ">
                 <p className="pr-[5px] hover:pr-[18px] ease-in duration-300">
                     Buildspace Universities are live
                 </p>
