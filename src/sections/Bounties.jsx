@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import sanityClient from "../client.js";
+import BG from "../assets/bountiesbg.jpeg"
+
 const Bounties = () => {
     const [bounties, setBounties] = useState([]);
 
@@ -22,9 +24,10 @@ const Bounties = () => {
     // bounties.map((bounty) => "html code here")
     // use the attributes like bounty.bountyName, bounty.pricePool, bounty.submission
 
-    return ( <>
-    
-    </> );
-}
+    return ( 
+        <div>
+            <img className="w-full h-screen object-cover" src={BG} alt="background"/>
+        </div> 
+    )}
  
 export default Bounties;

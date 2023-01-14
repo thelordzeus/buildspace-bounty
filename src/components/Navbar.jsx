@@ -19,7 +19,7 @@ export default function Navbar() {
                 <img className="h-12 w-12" src={logo} alt="buildspace logo"/>
                 <p>buildspace</p>
             </div>
-            <ul className='hidden sm:flex text-neutral-300'>
+            <ul className='hidden sm:flex text-neutral-300 '>
                 <li className='px-[20px]'>bounties</li>
                 <li className='px-[20px]'>leaderboard</li>
             </ul>
