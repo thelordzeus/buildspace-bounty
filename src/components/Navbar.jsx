@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { VscClose } from 'react-icons/vsc'
+import logo from "../assets/buildspacelogo.png"
 
 export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false)
@@ -14,8 +15,9 @@ export default function Navbar() {
   return (
     <div className='z-10 fixed top-0 left-0 flex items-center bg-neutral-600/40 backdrop-blur-lg h-[60px] w-full'>
         <div className='flex justify-between items-center text-white w-full sm:w-[70%] px-[25px] sm:px-[0px] mx-auto'>
-            <div className='text-[20px] font-medium'>
-                buildspace
+            <div className='flex items-center text-[20px] font-medium'>
+                <img className="h-12 w-12" src={logo} alt="buildspace logo"/>
+                <p>buildspace</p>
             </div>
             <ul className='hidden sm:flex text-neutral-300'>
                 <li className='px-[20px]'>bounties</li>
@@ -26,9 +28,10 @@ export default function Navbar() {
         </div>
         {mobileNav && 
           <div className='z-20 absolute top-0 left-0 bg-black text-white w-full'>
-            <div className='flex justify-between items-center px-[25px] py-[15px]'>
-              <div className='text-[20px] font-medium'>
-                buildspace
+            <div className='flex justify-between items-center px-[25px] py-[6px]'>
+              <div className='flex items-center text-[20px] font-medium'>
+                  <img className="h-12 w-12" src={logo} alt="buildspace logo"/>
+                  <p>buildspace</p>
               </div>
               <div className='text-neutral-500'>
                 <VscClose onClick={handleMobileNav} size={35}/>
