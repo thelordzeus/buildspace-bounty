@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-spring/parallax": "^9.6.1",
+    "@sanity/cli": "^3.2.3",
     "@sanity/client": "^4.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
