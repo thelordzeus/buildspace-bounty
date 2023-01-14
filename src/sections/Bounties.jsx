@@ -7,13 +7,13 @@ const Bounties = () => {
 
     useEffect(()=>{
         const fetchItems = async () => {
-            const data = await sanityClient.fetch(`*[_type == bounties]{
+            const data = await sanityClient.fetch(`*[_type == "bounties"]{
                 bountyName,
                 pricePool,
                 submission
             }`);
             setBounties(data);
-            console.log("useEffect data");
+            console.log("bounties data");
             console.log(data);
 
 
