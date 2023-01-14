@@ -1,34 +1,22 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Bounties from "./sections/Bounties";
-import LeaderBoard from "./sections/LeaderBoard";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import Leader from "./sections/Leader";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Parallax pages={2}>
-        <ParallaxLayer
-          offset={0}  
-          speed={1}
-          sticky={{start: 0, end: 1}}
-        >
-          <Hero/>
+        <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
+          <Hero />
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={0.9999}  
-          speed={1}
-          sticky={{start: 1, end: 0}}
-        >
-          <Bounties/>
+        <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 1, end: 0 }}>
+          <Bounties />
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={0.9999}  
-          speed={1}
-          sticky={{start: 2, end: 1}}
-        >
-          <LeaderBoard/>
+        <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
+          <Leader />
         </ParallaxLayer>
       </Parallax>
     </div>
