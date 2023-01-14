@@ -13,7 +13,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className='z-10 fixed top-0 left-0 flex items-center bg-neutral-600/40 backdrop-blur-lg h-[60px] w-full'>
+    <div className='z-10 fixed top-0 left-0 flex items-center bg-neutral-700/40 backdrop-blur-lg h-[60px] w-full'>
         <div className='flex justify-between items-center text-white w-full sm:w-[70%] px-[25px] sm:px-[0px] mx-auto'>
             <div className='flex items-center text-[20px] font-medium'>
                 <img className="h-12 w-12" src={logo} alt="buildspace logo"/>
