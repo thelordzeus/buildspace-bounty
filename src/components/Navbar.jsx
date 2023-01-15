@@ -18,8 +18,9 @@ export default function Navbar() {
           <p>buildspace</p>
         </div>
         <ul className="hidden sm:flex text-neutral-300 ">
-          <li className="px-[20px]">bounties</li>
-          <li className="px-[20px]">leaderboard</li>
+          <li onClick={()=> {document.getElementById("hero").scrollIntoView();}} className="px-[20px] cursor-pointer">home</li>
+          <li onClick={()=> {document.getElementById("bounties").scrollIntoView();}} className="px-[20px] cursor-pointer">bounties</li>
+          <li onClick={()=> {document.getElementById("leaderboard").scrollIntoView();}} className="px-[20px] cursor-pointer">leaderboard</li>
         </ul>
         <button className="hidden sm:block bg-white text-black font-medium text-[18px] rounded-full py-[5px] px-[16px]">
           Start
@@ -40,8 +41,9 @@ export default function Navbar() {
             </div>
           </div>
           <ul className="text-neutral-300 py-[25px]">
-            <li className="mx-[25px] py-[5px]">bounties</li>
-            <li className="mx-[25px] py-[5px]">leaderboard</li>
+            <li onClick={()=> {document.getElementById("hero").scrollIntoView();}} className="mx-[25px] py-[5px] cursor-pointer">home</li>
+            <li onClick={()=> {document.getElementById("bounties").scrollIntoView();}} className="mx-[25px] py-[5px] cursor-pointer">bounties</li>
+            <li onClick={()=> {document.getElementById("leaderboard").scrollIntoView();}} className="mx-[25px] py-[5px] cursor-pointer">leaderboard</li> cursor-pointer
           </ul>
           <button className="bg-white text-black font-medium text-[18px] rounded-full py-[5px] px-[16px] mx-[25px] mt-[15px] mb-[60px]">
             Start

@@ -10,13 +10,13 @@ function App() {
     <div>
       <Navbar />
       <Parallax pages={2.5}>
-        <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
+        <ParallaxLayer id="hero" offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
           <Hero />
         </ParallaxLayer>
-        <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 1, end: 0 }}>
-          <Bounties />
+        <ParallaxLayer  id="bounties" offset={0.9999} speed={1} sticky={{ start: 1, end: 0 }}>
+          <Bounties/>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
+        <ParallaxLayer id="leaderboard" offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
           <LeaderBoard />
           <Footer />
         </ParallaxLayer>
