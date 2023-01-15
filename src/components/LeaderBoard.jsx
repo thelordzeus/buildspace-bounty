@@ -39,7 +39,39 @@ const LeaderBoard = () => {
   }, []);
 
   const options = {
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        grid: {
+          drawTicks: false,
+          display: false,
+        },
+        ticks: {
+          color: "rgba(255, 255, 255)",
+          font: {
+            size: 15,
+            style: "normal",
+            lineHeight: 1.5,
+            weight: "bold",
+          },
+        },
+      },
+      y: {
+        grid: {
+          drawTicks: false,
+          display: false,
+        },
+        ticks: {
+          color: "rgba(255, 255, 255)",
+          font: {
+            size: 15,
+            style: "normal",
+            lineHeight: 1.5,
+          },
+        },
+      },
+    },
+    barThickness: 50,
     indexAxis: "x",
     elements: {
       bar: {
@@ -47,13 +79,24 @@ const LeaderBoard = () => {
       },
     },
     responsive: true,
+
     plugins: {
       legend: {
         position: "bottom",
+        labels: {
+          color: "rgba(255, 255, 255)",
+          font: {
+            size: 14,
+          },
+        },
       },
       title: {
         display: true,
-        text: "LeaderBoard",
+        text: "",
+        color: "rgba(255, 255, 255)",
+        font: {
+          size: 20,
+        },
       },
     },
   };
@@ -62,15 +105,18 @@ const LeaderBoard = () => {
     labels: leaders.map((leader) => leader.personName),
     datasets: [
       {
-        label: "LeaderBoard",
+        label: "Total bounties won",
         data: leaders.map((winning) => winning.totalWinnings),
         backgroundColor: [
-          "#2E0249",
-          "#FF0000",
-          "#570A57",
-          "#00FFDD",
-          "#FF0075",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
+          "rgba(255, 255, 255)",
         ],
+        borderWidth: 1,
         hoverOffset: 4,
       },
     ],
@@ -81,9 +127,8 @@ const LeaderBoard = () => {
   return (
     <>
       <div className="App">
-        <h1>Sales Realtime chart</h1>
         <div className="Bar">
-          <Bar data={data} options={options} height={100} width={100} />
+          <Bar data={data} options={options} height={400} width={600} />
         </div>
       </div>
     </>
