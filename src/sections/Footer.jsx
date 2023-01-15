@@ -15,6 +15,16 @@ export const Footer = () => {
             <img className="h-12 w-12" src={logo} alt="buildspace logo" />
             <p className="text-white">buildspace</p>
           </a>
+          <div className="mt-6 lg:max-w-sm">
+            <p className="text-sm text-white tracking-wide leading-relaxed italic subpixel-antialiased">
+              "This is a website that displays available bounties for users to
+              complete. Built with React and utilizing Sanity CMS for the
+              backend, it allows the owner to easily publish bounties and
+              leaderboard data through the Sanity Studio. The website also
+              features interactive charts created with Chart.js, making it easy
+              for users to track their progress and compete for prizes."
+            </p>
+          </div>
         </div>
         <div className="space-y-2 text-sm">
           <p className="text-base font-bold tracking-wide text-white">
