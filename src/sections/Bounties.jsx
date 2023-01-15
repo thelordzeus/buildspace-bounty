@@ -32,76 +32,24 @@ const Bounties = () => {
             bounties
           </h1>
           <ul className="px-[20px] sm:px-[40px]">
-            <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
-              <p>Github co-pilot for emails</p>
-              <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
-                <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
-                  &#36;250
-                </p>
-                <a
-                  className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
-                  href=" "
-                >
-                  Submit
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
-              <p>Design a bounties landing page</p>
-              <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
-                <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
-                  &#36;200
-                </p>
-                <a
-                  className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
-                  href=" "
-                >
-                  Submit
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
-              <p>Chrome extension to TLDR every page</p>
-              <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
-                <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
-                  &#36;150
-                </p>
-                <a
-                  className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
-                  href=" "
-                >
-                  Submit
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
-              <p>Historic NFT Floor price API route</p>
-              <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
-                <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
-                  &#36;100
-                </p>
-                <a
-                  className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
-                  href=" "
-                >
-                  Submit
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
-              <p>Create a comic about buildspace university</p>
-              <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
-                <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
-                  &#36;100
-                </p>
-                <a
-                  className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
-                  href=" "
-                >
-                  Submit
-                </a>
-              </div>
-            </li>
+            {bounties.map((bounty) => {
+              return (
+                <li className="flex flex-col sm:flex-row items-center justify-between border-b border-neutral-600 py-[10px]">
+                  <p>{bounty.bountyName}</p>
+                  <div className="flex items-center sm:ml-[50px] my-[10px] sm:my-[0px]">
+                    <p className="bg-green-600 rounded-full py-[2px] px-[12px] mr-[10px] hover:opacity-70 ease-in duration-300">
+                      {bounty.pricePool}
+                    </p>
+                    <a
+                      className="bg-white text-black rounded-full py-[2px] px-[12px] hover:opacity-70 ease-in duration-300"
+                      href={bounty.submission}
+                    >
+                      Submit
+                    </a>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

@@ -6,8 +6,9 @@ const Leader = () => {
   return (
     <div>
       <img className="w-full h-screen object-cover" src={BG} alt="background" />
-      <LeaderBoard /> //This is the chart. Please make sure to align it by
-      giving proper css and proper css classname and inside a div.
+      <div className="">
+        <LeaderBoard />
+      </div>
     </div>
   );
 };
