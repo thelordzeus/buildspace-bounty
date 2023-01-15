@@ -4,7 +4,7 @@ import Bounties from "./sections/Bounties";
 import LeaderBoard from "./sections/LeaderBoard";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Footer } from "./sections/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
