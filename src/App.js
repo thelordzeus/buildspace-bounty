@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Parallax pages={2}>
+      <Parallax pages={2.5}>
         <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
           <Hero />
         </ParallaxLayer>
@@ -18,6 +18,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
           <LeaderBoard />
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
