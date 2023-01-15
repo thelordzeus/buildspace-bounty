@@ -1,7 +1,7 @@
 import BG from "../assets/leaderboardbg.jpeg";
-import LeaderBoard from "../components/LeaderBoard";
+import Chart from "../components/Chart";
 
-const Leader = () => {
+const LeaderBoard = () => {
   return (
     <div>
       <img
@@ -9,17 +9,16 @@ const Leader = () => {
         src={BG}
         alt="background"
       />
-
       <div className="absolute top-0 left-0 w-full flex items-center justify-center bg-black/30 h-screen">
-        <div className=" flex flex-col items-center rounded-lg bg-neutral-800/70 backdrop-blur-sm py-[7px] px-[18px] sm:px-[24px] mb-[36px] max-[500px]:text-[16px] text-[20px]">
+        <div className=" flex flex-col items-center rounded-[15px] bg-neutral-800/70 backdrop-blur-sm pt-[7px] pb-[25px] px-[20px] sm:px-[24px] max-[500px]:text-[16px] text-[20px] mx-[15px]">
           <h1 className="text-[20px] font-medium bg-neutral-300/10 rounded-full px-[15px] my-[10px] text-white">
             LeaderBoards
           </h1>
-          <LeaderBoard />
+          <Chart/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Leader;
+export default LeaderBoard;

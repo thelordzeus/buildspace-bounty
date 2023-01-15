@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Bounties from "./sections/Bounties";
-import Leader from "./sections/Leader";
+import LeaderBoard from "./sections/LeaderBoard";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Bounties />
         </ParallaxLayer>
         <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
-          <Leader />
+          <LeaderBoard />
         </ParallaxLayer>
       </Parallax>
     </div>

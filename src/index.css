@@ -6,8 +6,4 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-/* This is the css for the Bar chart , move it to the styles/comp/bar.css file and load that file and build it.*/
-.Bar {
-  width: 100%;
-  height: 100%;
-}
+
