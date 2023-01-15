@@ -71,11 +71,11 @@ const LeaderBoard = () => {
         },
       },
     },
-    barThickness: 50,
+    barThickness: 30,
     indexAxis: "x",
     elements: {
       bar: {
-        borderWidth: 1,
+        borderWidth: 0,
       },
     },
     responsive: true,
@@ -127,8 +127,12 @@ const LeaderBoard = () => {
   return (
     <>
       <div className="App">
-        <div className="Bar">
-          <Bar data={data} options={options} height={400} width={600} />
+        <div className="h-full w-full">
+          <Bar 
+            data={data} 
+            options={options} 
+            className="h-[300px] w-[260px] min-[500px]:h-[350] min-[500px]:w-[320px] sm:h-[350px] sm:w-[500px] md:h-[400px] md:w-[600px]"
+          />
         </div>
       </div>
     </>

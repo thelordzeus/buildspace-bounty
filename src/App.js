@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Bounties from "./sections/Bounties";
-import Leader from "./sections/Leader";
+import LeaderBoard from "./sections/LeaderBoard";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Footer } from "./sections/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Parallax pages={2}>
+      <Parallax pages={2.5}>
         <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
           <Hero />
         </ParallaxLayer>
@@ -17,7 +17,7 @@ function App() {
           <Bounties />
         </ParallaxLayer>
         <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
-          <Leader />
+          <LeaderBoard />
           <Footer />
         </ParallaxLayer>
       </Parallax>
