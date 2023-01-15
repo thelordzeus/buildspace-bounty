@@ -39,7 +39,7 @@ const LeaderBoard = () => {
   }, []);
 
   const options = {
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     scales: {
       x: {
         grid: {
