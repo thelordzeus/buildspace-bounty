@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Bounties from "./sections/Bounties";
 import Leader from "./sections/Leader";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Footer } from "./sections/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0.9999} speed={1} sticky={{ start: 2, end: 1 }}>
           <Leader />
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
